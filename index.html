@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafen — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f7f2e8;
+    --card: #fffdf8;
+    --ink: #2b2118;
+    --muted: #7a6e5f;
+    --accent: #c98a2d;
+    --line: #eae3d5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141a24;
+      --card: #1b2432;
+      --ink: #f1e9da;
+      --muted: #a99f8f;
+      --accent: #e0a44a;
+      --line: #2a3648;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  header { text-align: center; margin-bottom: 8px; }
+  .mark { font-size: 40px; line-height: 1; }
+  h1 { font-family: "New York", "Iowan Old Style", Georgia, serif; font-size: 1.9rem; margin: 12px 0 4px; }
+  h2 { font-family: "New York", "Iowan Old Style", Georgia, serif; font-size: 1.25rem; margin: 34px 0 10px; }
+  h3 { font-size: 1.02rem; margin: 22px 0 6px; }
+  .sub { color: var(--muted); font-size: .92rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 8px 26px 26px;
+    margin-top: 26px;
+  }
+  .tldr {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 22px 0 4px;
+    font-weight: 500;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 46px 0; }
+  .lang { text-align: center; color: var(--muted); font-size: .9rem; margin-bottom: 26px; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 40px; }
+  code { background: color-mix(in srgb, var(--muted) 18%, transparent); padding: 1px 6px; border-radius: 6px; font-size: .9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">📚</div>
+    <h1>Rafen — Privacy Policy</h1>
+    <div class="sub">Effective date: August 26, 2026 · Developer: Hamit Tırpan</div>
+  </header>
+
+  <div class="lang"><a href="#en">English</a> · <a href="#tr">Türkçe</a></div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="en" class="card">
+    <div class="tldr">
+      In short: your library belongs to you. Rafen keeps your data on your
+      device and, if you use iCloud, in your personal iCloud — which we cannot
+      access. There is no Rafen account, no analytics, no ads, and no tracking.
+    </div>
+
+    <h2>What Rafen stores</h2>
+    <p>
+      Everything you put into Rafen — your books, bookcases, shelf placements,
+      loans, reading status, and notes — is stored locally on your device.
+    </p>
+
+    <h2>iCloud sync</h2>
+    <p>
+      If your device is signed into iCloud, Rafen syncs your library through
+      Apple's CloudKit <strong>private database</strong>, tied to your Apple
+      ID. This data is accessible only to you; the developer has no way to
+      read it. Sync is optional — without an iCloud account, Rafen simply
+      works locally. iCloud storage is governed by
+      <a href="https://www.apple.com/legal/privacy/">Apple's privacy terms</a>.
+    </p>
+
+    <h2>What leaves your device</h2>
+    <ul>
+      <li>
+        <strong>Book search.</strong> When you search for a book, the text you
+        type (title, author, or ISBN) is sent to
+        <a href="https://openlibrary.org">Open Library</a> and
+        <a href="https://books.google.com">Google Books</a> to fetch book
+        details and cover images. These queries are not linked to your
+        identity by Rafen and are subject to those services' own policies.
+        Cover images are loaded directly from their servers.
+      </li>
+      <li>
+        <strong>iCloud.</strong> As described above — your private database
+        only.
+      </li>
+      <li>
+        <strong>Nothing else.</strong> Rafen has no server of its own, no
+        analytics SDK, no advertising, and no third-party tracking.
+      </li>
+    </ul>
+
+    <h2>Camera</h2>
+    <p>
+      The camera is used to scan book barcodes. Scanning happens entirely
+      on-device; camera frames are never stored or uploaded.
+    </p>
+
+    <h2>Notifications</h2>
+    <p>
+      Loan reminders are local notifications, scheduled and delivered on your
+      device. Nothing is sent to a server.
+    </p>
+
+    <h2>Purchases</h2>
+    <p>
+      Rafen Premium is sold through Apple's App Store (StoreKit). Payment is
+      handled entirely by Apple; we never see your payment details. Terms of
+      use follow
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's Standard EULA</a>.
+    </p>
+
+    <h2>Feedback</h2>
+    <p>
+      If you choose to email us at
+      <a href="mailto:rafen.app@gmail.com">rafen.app@gmail.com</a>, we use
+      your message only to respond. No feedback is required to use the app.
+    </p>
+
+    <h2>Deleting your data</h2>
+    <p>
+      Deleting the app removes your local data. To remove synced data, delete
+      Rafen's iCloud data from
+      <code>Settings › Apple ID › iCloud › Manage Storage</code>. We keep
+      nothing, so there is nothing further to request from us.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Rafen does not collect personal data from anyone, including children.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy changes (for example when new features ship), the update
+      will be published on this page with a new effective date.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Hamit Tırpan ·
+      <a href="mailto:rafen.app@gmail.com">rafen.app@gmail.com</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ===================== TÜRKÇE ===================== -->
+  <section id="tr" class="card">
+    <div class="tldr">
+      Kısaca: kütüphanen sana aittir. Rafen verini cihazında ve iCloud
+      kullanıyorsan kişisel iCloud'unda tutar — biz erişemeyiz. Rafen hesabı,
+      analitik, reklam ve takip yoktur.
+    </div>
+
+    <h2>Rafen neyi saklar</h2>
+    <p>
+      Rafen'e girdiğin her şey — kitapların, kitaplıkların, raf yerleşimleri,
+      ödünçler, okuma durumu ve notlar — cihazında yerel olarak saklanır.
+    </p>
+
+    <h2>iCloud eşitleme</h2>
+    <p>
+      Cihazın iCloud'a girişliyse kütüphanen, Apple ID'ne bağlı CloudKit
+      <strong>özel veritabanı</strong> üzerinden eşitlenir. Bu veriye yalnız
+      sen erişebilirsin; geliştiricinin okuma imkânı yoktur. Eşitleme
+      isteğe bağlıdır — iCloud hesabı yoksa Rafen yerel çalışmaya devam eder.
+      iCloud saklama
+      <a href="https://www.apple.com/legal/privacy/">Apple'ın gizlilik şartlarına</a>
+      tabidir.
+    </p>
+
+    <h2>Cihazından ne çıkar</h2>
+    <ul>
+      <li>
+        <strong>Kitap arama.</strong> Kitap ararken yazdığın metin (başlık,
+        yazar ya da ISBN), kitap bilgisi ve kapak getirmek için
+        <a href="https://openlibrary.org">Open Library</a> ve
+        <a href="https://books.google.com">Google Books</a>'a gönderilir.
+        Bu sorgular Rafen tarafından kimliğinle ilişkilendirilmez ve o
+        servislerin kendi politikalarına tabidir. Kapak görselleri doğrudan
+        onların sunucularından yüklenir.
+      </li>
+      <li>
+        <strong>iCloud.</strong> Yukarıda anlatıldığı gibi — yalnız senin özel
+        veritabanın.
+      </li>
+      <li>
+        <strong>Başka hiçbir şey.</strong> Rafen'in kendi sunucusu, analitik
+        SDK'sı, reklamı ve üçüncü taraf takibi yoktur.
+      </li>
+    </ul>
+
+    <h2>Kamera</h2>
+    <p>
+      Kamera, kitap barkodu okutmak için kullanılır. Okuma tamamen cihaz
+      üzerinde gerçekleşir; kamera görüntüleri saklanmaz ve yüklenmez.
+    </p>
+
+    <h2>Bildirimler</h2>
+    <p>
+      Ödünç hatırlatmaları yerel bildirimdir; cihazında planlanır ve
+      gösterilir. Sunucuya bir şey gönderilmez.
+    </p>
+
+    <h2>Satın alımlar</h2>
+    <p>
+      Rafen Premium, Apple App Store (StoreKit) üzerinden satılır. Ödemeyi
+      tamamen Apple yürütür; ödeme bilgilerini asla görmeyiz. Kullanım
+      koşulları
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple'ın Standart EULA'sını</a>
+      izler.
+    </p>
+
+    <h2>Geri bildirim</h2>
+    <p>
+      <a href="mailto:rafen.app@gmail.com">rafen.app@gmail.com</a> adresine
+      yazmayı seçersen mesajını yalnız yanıt vermek için kullanırız. App'i
+      kullanmak için geri bildirim gerekmez.
+    </p>
+
+    <h2>Verini silmek</h2>
+    <p>
+      App'i silmek yerel veriyi kaldırır. Eşitlenen veriyi kaldırmak için
+      <code>Ayarlar › Apple ID › iCloud › Saklama Alanını Yönet</code>
+      yolundan Rafen'in iCloud verisini silebilirsin. Bizde hiçbir şey
+      tutulmaz; bizden ayrıca talep edilecek bir şey yoktur.
+    </p>
+
+    <h2>Çocuklar</h2>
+    <p>
+      Rafen, çocuklar dahil hiç kimseden kişisel veri toplamaz.
+    </p>
+
+    <h2>Değişiklikler</h2>
+    <p>
+      Bu politika değişirse (örneğin yeni özellikler geldiğinde) güncel hâli
+      yeni yürürlük tarihiyle bu sayfada yayımlanır.
+    </p>
+
+    <h2>İletişim</h2>
+    <p>
+      Hamit Tırpan ·
+      <a href="mailto:rafen.app@gmail.com">rafen.app@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    Rafen — Every book has its place. · Her kitabın bir yeri var.
+  </footer>
+</div>
+</body>
+</html>
