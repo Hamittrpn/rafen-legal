@@ -67,7 +67,7 @@
   <header>
     <div class="mark">📚</div>
     <h1>Rafen — Privacy Policy</h1>
-    <div class="sub">Effective date: August 26, 2026 · Developer: Hamit Tırpan</div>
+    <div class="sub">Effective date: September 3, 2026 · Developer: Hamit Tırpan</div>
   </header>
 
   <div class="lang"><a href="#en">English</a> · <a href="#tr">Türkçe</a></div>
@@ -78,6 +78,9 @@
       In short: your library belongs to you. Rafen keeps your data on your
       device and, if you use iCloud, in your personal iCloud — which we cannot
       access. There is no Rafen account, no analytics, no ads, and no tracking.
+      Two optional features send data out: shelf scanning uploads a photo to
+      be read and discarded, and the Friends feature publishes a catalogue you
+      choose to share. Both are described below.
     </div>
 
     <h2>What Rafen stores</h2>
@@ -112,15 +115,73 @@
         only.
       </li>
       <li>
-        <strong>Nothing else.</strong> Rafen has no server of its own, no
-        analytics SDK, no advertising, and no third-party tracking.
+        <strong>Shelf scanning.</strong> See the next section — a photo you
+        take is uploaded only when you tap “Scan this compartment”.
       </li>
+      <li>
+        <strong>Friends and household.</strong> See below — only what you
+        choose to share, only with people you accept.
+      </li>
+      <li>
+        <strong>Nothing else.</strong> Rafen has no analytics SDK, no
+        advertising, and no third-party tracking. The only server Rafen
+        operates is the shelf-scanning relay described below.
+      </li>
+    </ul>
+
+    <h2>Shelf scanning (AI)</h2>
+    <p>
+      When you tap “Scan this compartment”, the photo of that shelf
+      compartment is sent to a small relay server operated by Rafen and from
+      there to Google’s Gemini model, which reads the book spines and returns
+      a list of titles. The photo is used only to produce that list:
+    </p>
+    <ul>
+      <li>The relay does not store the photo or the result; both are
+        discarded as soon as the answer is returned to you.</li>
+      <li>The photo is not linked to your name, account, or library. The
+        relay sees an anonymous installation identifier used only to count
+        scans against the free and Premium allowances.</li>
+      <li>Rafen uses Google’s paid API tier, under which Google states that
+        your content is not used to improve its models. Google’s handling of
+        the request is governed by its
+        <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</li>
+      <li>If you are a Premium subscriber, a signed proof of your App Store
+        purchase (issued by Apple, containing no personal data) is sent with
+        the request so the relay can apply the Premium allowance.</li>
+      <li>Nothing is uploaded unless you start a scan. Books can always be
+        added by search or barcode without sending any photo.</li>
+    </ul>
+
+    <h2>Friends and household</h2>
+    <p>
+      These features are optional and need an iCloud account. If you create a
+      profile, Rafen writes to a public iCloud database that Rafen operates:
+    </p>
+    <ul>
+      <li><strong>Your profile:</strong> the display name and colour you
+        choose, and a random share code. No email, phone number, or real
+        name is required.</li>
+      <li><strong>Your catalogue snapshot:</strong> titles, authors, covers,
+        years, tags, and whether a book is on the shelf. It never contains
+        where a book lives, your notes, or who borrowed it. For a household
+        you join, shelf positions are included so housemates can find books.
+        Books you mark as hidden are left out.</li>
+      <li>The snapshot is readable only by friends you have accepted (or
+        housemates). Friend requests, borrow requests and their messages are
+        stored in the same database until they are answered or removed.</li>
+      <li>You can block or report a person from their library page; blocking
+        removes their access immediately. Deleting your profile removes your
+        catalogue from the database.</li>
     </ul>
 
     <h2>Camera</h2>
     <p>
-      The camera is used to scan book barcodes. Scanning happens entirely
-      on-device; camera frames are never stored or uploaded.
+      The camera is used to scan book barcodes and to photograph shelf
+      compartments. Barcode scanning happens entirely on-device; camera
+      frames are never stored or uploaded. A shelf photo is uploaded only
+      when you start a scan, as described above, and can also be kept on
+      your device as the compartment’s photo.
     </p>
 
     <h2>Notifications</h2>
@@ -213,15 +274,75 @@
         veritabanın.
       </li>
       <li>
-        <strong>Başka hiçbir şey.</strong> Rafen'in kendi sunucusu, analitik
-        SDK'sı, reklamı ve üçüncü taraf takibi yoktur.
+        <strong>Raf tarama.</strong> Bir sonraki bölümde — çektiğin fotoğraf
+        yalnız “Bu gözü tara”ya dokunduğunda yüklenir.
       </li>
+      <li>
+        <strong>Arkadaşlar ve ev halkı.</strong> Aşağıda — yalnız paylaşmayı
+        seçtiğin şey, yalnız kabul ettiğin kişilerle.
+      </li>
+      <li>
+        <strong>Başka hiçbir şey.</strong> Rafen'in analitik SDK'sı, reklamı
+        ve üçüncü taraf takibi yoktur. Rafen'in işlettiği tek sunucu, aşağıda
+        anlatılan raf tarama aktarıcısıdır.
+      </li>
+    </ul>
+
+    <h2>Raf tarama (yapay zekâ)</h2>
+    <p>
+      “Bu gözü tara”ya dokunduğunda o raf gözünün fotoğrafı, Rafen'in
+      işlettiği küçük bir aktarıcı sunucuya, oradan da kitap sırtlarını okuyup
+      başlık listesi döndüren Google Gemini modeline gönderilir. Fotoğraf
+      yalnız o listeyi üretmek için kullanılır:
+    </p>
+    <ul>
+      <li>Aktarıcı fotoğrafı da sonucu da saklamaz; cevap sana döner dönmez
+        ikisi de silinir.</li>
+      <li>Fotoğraf adınla, hesabınla ya da kütüphanenle ilişkilendirilmez.
+        Aktarıcı yalnız, taramaları ücretsiz ve Premium haklarına karşı saymak
+        için kullanılan anonim bir kurulum kimliği görür.</li>
+      <li>Rafen, Google'ın ücretli API katmanını kullanır; Google bu katmanda
+        içeriğinin modellerini geliştirmek için kullanılmadığını belirtir.
+        İsteğin Google tarafındaki işlenişi
+        <a href="https://ai.google.dev/gemini-api/terms">Gemini API şartlarına</a>
+        tabidir.</li>
+      <li>Premium aboneysen, aktarıcının Premium hakkını uygulayabilmesi için
+        istekle birlikte App Store satın alımının Apple imzalı kanıtı (kişisel
+        veri içermez) gönderilir.</li>
+      <li>Sen bir tarama başlatmadıkça hiçbir şey yüklenmez. Kitaplar her zaman
+        fotoğraf göndermeden, arama ya da barkodla eklenebilir.</li>
+    </ul>
+
+    <h2>Arkadaşlar ve ev halkı</h2>
+    <p>
+      Bu özellikler isteğe bağlıdır ve iCloud hesabı gerektirir. Bir profil
+      oluşturursan Rafen, kendi işlettiği herkese açık bir iCloud veritabanına
+      yazar:
+    </p>
+    <ul>
+      <li><strong>Profilin:</strong> seçtiğin görünen ad ve renk ile rastgele
+        bir paylaşım kodu. E-posta, telefon ya da gerçek ad istenmez.</li>
+      <li><strong>Katalog anlık görüntün:</strong> başlıklar, yazarlar,
+        kapaklar, yıllar, etiketler ve kitabın rafta olup olmadığı. Kitabın
+        nerede durduğu, notların ya da kimin ödünç aldığı hiçbir zaman
+        içinde yer almaz. Katıldığın bir ev halkı için ev arkadaşların
+        kitabı bulabilsin diye raf konumları da eklenir. Gizli işaretlediğin
+        kitaplar dışarıda bırakılır.</li>
+      <li>Anlık görüntüyü yalnız kabul ettiğin arkadaşlar (ya da ev halkı)
+        okuyabilir. Arkadaşlık istekleri, ödünç istekleri ve mesajları,
+        cevaplanana ya da kaldırılana kadar aynı veritabanında durur.</li>
+      <li>Bir kişiyi kütüphane sayfasından engelleyebilir ya da şikâyet
+        edebilirsin; engelleme erişimini anında kaldırır. Profilini silmek
+        kataloğunu veritabanından kaldırır.</li>
     </ul>
 
     <h2>Kamera</h2>
     <p>
-      Kamera, kitap barkodu okutmak için kullanılır. Okuma tamamen cihaz
-      üzerinde gerçekleşir; kamera görüntüleri saklanmaz ve yüklenmez.
+      Kamera, kitap barkodu okutmak ve raf gözlerini fotoğraflamak için
+      kullanılır. Barkod okuma tamamen cihaz üzerinde gerçekleşir; kamera
+      görüntüleri saklanmaz ve yüklenmez. Raf fotoğrafı yalnız yukarıda
+      anlatıldığı gibi bir tarama başlattığında yüklenir ve istersen gözün
+      fotoğrafı olarak cihazında da tutulabilir.
     </p>
 
     <h2>Bildirimler</h2>
